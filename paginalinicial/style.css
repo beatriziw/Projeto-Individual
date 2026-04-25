@@ -1,0 +1,48 @@
+.header{
+    background-color: #FF8DA1;
+    padding:70px;
+    text-align: center;
+}
+.navbar a{
+  font-family: monospace;
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;  
+  justify-content: space-between;
+  margin:0 15px;
+}
+.estrelas{
+    text-align: center;
+    margin-top: -360px;   
+}
+
+.estrelas img{
+    width:300px;
+}
+
+.container{
+display:flex;
+justify-content: space-between;
+padding: 40px;
+}
+
+.texto{
+width:55%;
+color: #5a2d0c;
+font-size: 20px;
+font-family: monospace;
+display:flex;
+text-align: justify;
+}
+
+.imagens{
+    width:30%;
+    text-align: center;
+}
+
+.imagens img{
+    margin-left: -100px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
