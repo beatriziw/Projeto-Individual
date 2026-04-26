@@ -1,48 +1,61 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#e0dff6;
+}
 .header{
-    background-color: #FF8DA1;
+    background-color: #CCCCFF;
     padding:70px;
     text-align: center;
 }
 .navbar a{
   font-family: monospace;
   flex-direction: row;
-  color: white;
+  color: #758fd6;
   text-decoration: none;
   font-size: 28px;  
   justify-content: space-between;
   margin:0 15px;
 }
-.estrelas{
-    text-align: center;
-    margin-top: -360px;   
+.banner{
+display: flex;
+justify-content: center;
 }
-
-.estrelas img{
-    width:300px;
+.banner img{
+max-width: 40%;
 }
-
-.container{
-display:flex;
-justify-content: space-between;
-padding: 40px;
+.conteudo{
+ display: flex;
+ justify-content: flex-start;
+   
+}
+.titulo{
+font-family: monospace;
+margin-left: 50px;
+margin-top: 80px;
+color: #758fd6;
 }
 
 .texto{
-width:55%;
-color: #5a2d0c;
-font-size: 20px;
+background-color: aliceblue;
+padding: 40px;
+border-radius: 10px;
+width:35%;
+font-size:18px;
 font-family: monospace;
 display:flex;
 text-align: justify;
+margin-left: 50px;
+color: #758fd6;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .imagens{
-    width:30%;
-    text-align: center;
+    position:relative;
+    left:50px;
+    width:50%;
 }
 
 .imagens img{
-    margin-left: -100px;
     max-width: 100%;
-    margin-bottom: 15px;
 }
