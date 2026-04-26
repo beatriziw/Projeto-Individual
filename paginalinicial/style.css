@@ -9,13 +9,18 @@ body{
     text-align: center;
 }
 .navbar a{
-  font-family: monospace;
-  flex-direction: row;
-  color: #758fd6;
-  text-decoration: none;
-  font-size: 28px;  
-  justify-content: space-between;
-  margin:0 15px;
+font-family: monospace;
+flex-direction: row;
+color: #758fd6;
+text-decoration: none;
+font-size: 28px;  
+justify-content: space-between;
+margin-right: 20px;
+}
+li{
+    list-style: none;
+    color: #758fd6;
+    
 }
 .banner{
 display: flex;
@@ -51,11 +56,27 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .imagens{
-    position:relative;
-    left:50px;
-    width:50%;
+position:relative;
+left:50px;
+width:50%;
 }
 
 .imagens img{
     max-width: 100%;
+}
+.footer{
+height:90px;
+background-color: #CCCCFF;
+padding:70px;
+font-size: 15px;
+color: #758fd6;
+font-family: monospace;
+}
+.footer a{
+font-family: monospace;
+display: flex;
+flex-direction: column;
+color: #758fd6;
+text-decoration: none;
+font-size: 15px;   
 }
