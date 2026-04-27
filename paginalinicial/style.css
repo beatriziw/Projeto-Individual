@@ -42,10 +42,11 @@ color: #758fd6;
 }
 
 .texto{
+height:530px;
 background-color: aliceblue;
 padding: 40px;
-border-radius: 10px;
-width:35%;
+border-radius: 15px;
+width:40%;
 font-size:18px;
 font-family: monospace;
 display:flex;
@@ -58,7 +59,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 .imagens{
 position:relative;
 left:50px;
-width:50%;
+width:45%;
 }
 
 .imagens img{
@@ -71,6 +72,10 @@ padding:70px;
 font-size: 15px;
 color: #758fd6;
 font-family: monospace;
+}
+.calculadora{
+ background-color: aliceblue;
+ width:500px;
 }
 .footer a{
 font-family: monospace;

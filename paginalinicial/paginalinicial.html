@@ -34,6 +34,7 @@
     para filmagem são 24 frames por segundo, ou seja, em um segundo aparecem 24 imagens consecutivas em tela,
     esse conceito se estende para animação.  
     <br>
+    <br>
     Um segundo animado equivale a 24 desenhos por segundo, o que é chamado de frame a frame, essa técnica é
     mais usada para movimentos mais fluídos como danças ou para simular movimentações hiper-realistas.
     No entanto existem outras técnicas como o by twos, 12 desenhos para 24 frames, dessa forma cada desenho
@@ -48,7 +49,21 @@
  <image src="imagens/colagem.png">
  </div>
  </div>
-
+ <div class="calculadora">
+    <div class="titulo_calc"></div>
+    <h3>DESCUBRA QUANTOS FRAMES TEM EM UMA ANIMAÇÃO<h3>
+   
+    <p>Quantos Desenhos Tem a Sua Animação?</p>
+    <input type="text" id="input_segundos">
+    <p>Qual Técnica Será Utilizada?</p>
+    <select id="select_tecnica">
+        <option>Frame a Frame</option>
+        <option>By Twos</option>
+        <option>By Threes</option>   
+    </select>
+    <br>
+    <button onclick="calcular()">Calcular</button> 
+     </div>
  <div class="footer">
    <ul class="menu">  
     <li>  
@@ -56,13 +71,27 @@
     </li>
     <a href="#">Início</a>
     <a href="#">O que é Animação?</a>
-    <a href="#">Calculadora</a>
     <a href="#">Tipos de Animação</a>
     <a href="#">Dashaboard</a>
     </li>
     </ul>  
 
- </div>
- 
+</div>
 </body>
 </html>
+<script>
+    function calcular(){
+        let segundos = Number(input_segundos.value)
+        let tecnica = select_tecnica.value
+        let mensagem = ''
+
+        if(tecnica == 'Frame a Frame'){
+            mensagem = `Sua animação terá ${segundos*24} desenhos.`
+        } else if(tecnica == 'By Twos'){
+            mensagem = `Sua animação terá ${segundos*12} desenhos.`
+        }else{
+            mensagem = `Sua animação terá ${segundos*6} desenhos.`
+        }
+        div_mensagem.innerHTML = mensagem
+    }
+</script>
