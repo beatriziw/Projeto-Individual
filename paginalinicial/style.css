@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cutive&family=Fascinate&family=Fugaz+One&family=Mrs+Sheppards&family=Passion+One:wght@400;700;900&family=Rammetto+One&family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
 body{
     margin:0px;
     padding:0px;
-    background-color:#e0dff6;
+    background-image: url(imagens/quadriculado.jpg);
+    background-size: 100% auto;
+    
+
 }
 .header{
-    background-color: #CCCCFF;
-    padding:70px;
-    text-align: center;
+background-color: #CCCCFF;
+padding:60px;
+text-align: center;
 }
 .navbar a{
-font-family: monospace;
+font-family: "Passion One", sans-serif;
 flex-direction: row;
 color: #758fd6;
 text-decoration: none;
@@ -18,66 +23,80 @@ justify-content: space-between;
 margin-right: 20px;
 }
 li{
-    list-style: none;
-    color: #758fd6;
+list-style: none;
+color: #758fd6;
     
 }
 .banner{
+margin-top: 30px;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 }
 .banner img{
-max-width: 40%;
+max-width: 15%;
 }
 .conteudo{
- display: flex;
- justify-content: flex-start;
-   
-}
-.titulo{
-font-family: monospace;
-margin-left: 50px;
-margin-top: 80px;
-color: #758fd6;
+display: flex;
+justify-content: space-around;
+margin-top: 200px;   
 }
 
+.postit{
+width:50%;
+}
+.postit img{
+max-width:100%;
+}
 .texto{
-height:530px;
-background-color: aliceblue;
 padding: 40px;
-border-radius: 15px;
-width:40%;
+width:35%;
 font-size:18px;
-font-family: monospace;
+font-family: "Cutive", serif;
+font-style: normal;
 display:flex;
 text-align: justify;
-margin-left: 50px;
 color: #758fd6;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+position:absolute;
+left:100px;
+margin-top: 130px;
+line-height: 1.5;
+
 }
 
 .imagens{
 position:relative;
-left:50px;
 width:45%;
+right:16px;
 }
 
 .imagens img{
  max-width: 100%;
 }
-.footer{
-height:90px;
-background-color: #CCCCFF;
-padding:70px;
-font-size: 15px;
-color: #758fd6;
-font-family: monospace;
+.conteudo2{
+ margin-top: 200px;
+ display: flex;
+ justify-content: space-around;
+   
 }
-.calculadora{
- display:flex;
- justify-content: flex-end;
- margin-right: 50px;
- margin-top: 100px;
+.texto2{
+margin-top: -50px;
+right:140px;
+padding: 40px;
+width:25%;
+font-size:16px;
+line-height: 1.5;
+position:absolute;
+font-family: "Cutive", serif;
+display:flex;
+text-align: justify;
+color: #758fd6;
+}
+.postit2{
+width:35%;
+margin-top: -200px;
+}
+.postit2 img{
+max-width:100%;
 }
 input{
 width:400px;
@@ -89,29 +108,30 @@ width: 200px;
 height: 50px;
 background-color: #758fd6;
 color: #CCCCFF;
-font-size: 20px;
+font-size: 30px;
 border: none;
 border-radius: 15px;
-font-family: monospace;
-font-weight: bold;
+font-family: "Passion One", sans-serif;
 }
 select{
 font-family: monospace;
 font-size: 20px;
 }
-.titulo_calc{
+.calculadoraheader{
+font-family: "Passion One", sans-serif;
 display: flex;
 justify-content: center;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 align-items: center;
-margin-top: -50px;
+margin-top: -100px;
 color: #CCCCFF;
 width:520px;
 height: 70px;
-font-size: 15px;
-font-weight: bold;
+font-size: 18px;
 background-color: #758fd6;
 }
-.conteudo2{
+.calculadora{
 display: flex;
 background-color: aliceblue;
 color: #758fd6;
@@ -128,7 +148,13 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .footer{
-    margin-top: 100px;
+margin-top: 100px;
+height:90px;
+background-color: #CCCCFF;
+padding:70px;
+font-size: 15px;
+color: #758fd6;
+font-family: "Passion One", sans-serif;
 }
 .footer a{
 font-family: monospace;
