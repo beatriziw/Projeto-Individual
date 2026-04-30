@@ -4,8 +4,7 @@ body{
     margin:0px;
     padding:0px;
     background-image: url(imagens/quadriculado.jpg);
-    background-size: 100% auto;
-    
+    background-size: 100% auto;  
 
 }
 .header{
@@ -27,102 +26,17 @@ list-style: none;
 color: #758fd6;
     
 }
-.banner{
-margin-top: 30px;
-display: flex;
-justify-content: space-between;
-}
-.banner img{
-max-width: 15%;
-}
-.conteudo{
-display: flex;
-justify-content: space-around;
-margin-top: 200px;   
-}
-
-.postit{
-width:50%;
-}
-.postit img{
-max-width:100%;
-}
-.texto{
-padding: 40px;
-width:35%;
-font-size:18px;
-font-family: "Cutive", serif;
-font-style: normal;
-display:flex;
-text-align: justify;
-color: #758fd6;
-position:absolute;
-left:100px;
-margin-top: 130px;
-line-height: 1.5;
-
-}
-
-.imagens{
-position:relative;
-width:45%;
-right:16px;
-}
-
-.imagens img{
- max-width: 100%;
-}
-.conteudo2{
- margin-top: 200px;
- display: flex;
- justify-content: space-around;
-   
-}
-.texto2{
-margin-top: -50px;
-right:140px;
-padding: 40px;
-width:25%;
-font-size:16px;
-line-height: 1.5;
-position:absolute;
-font-family: "Cutive", serif;
-display:flex;
-text-align: justify;
-color: #758fd6;
-}
-.postit2{
-width:35%;
-margin-top: -200px;
-}
-.postit2 img{
-max-width:100%;
-}
 input{
 width:400px;
 height:30px;
 border-color: #758fd6;
 }
-button{
-width: 200px;
-height: 50px;
-background-color: #758fd6;
-color: #CCCCFF;
-font-size: 30px;
-border: none;
-border-radius: 15px;
-font-family: "Passion One", sans-serif;
-}
-select{
-font-family: monospace;
-font-size: 20px;
-}
-.calculadoraheader{
+.boxheader{
 font-family: "Passion One", sans-serif;
 display: flex;
 justify-content: center;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 align-items: center;
 margin-top: -100px;
 color: #CCCCFF;
@@ -131,7 +45,7 @@ height: 70px;
 font-size: 18px;
 background-color: #758fd6;
 }
-.calculadora{
+.box{
 display: flex;
 background-color: aliceblue;
 color: #758fd6;
@@ -146,7 +60,16 @@ align-items: center;
 border-radius: 15px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
+button{
+width: 200px;
+height: 50px;
+background-color: #758fd6;
+color: #CCCCFF;
+font-size: 30px;
+border: none;
+border-radius: 15px;
+font-family: "Passion One", sans-serif;
+}
 .footer{
 margin-top: 100px;
 height:90px;
