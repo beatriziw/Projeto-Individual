@@ -11,62 +11,16 @@
         let mensagem = ''
         let valido = true
        
-        // cnpj validacao
-    
-        if (cnpj === '') {/*se o campo estiver vazio será marcado como inválido*/
-            valido = false
-            document.getElementById('cnpj-required-error').style.display = "block"; /*chama mensagem definida no html (cnpj não pode estar vazio) e a deixa visivel*/
-        } else {
-            document.getElementById('cnpj-required-error').style.display = "none";/*chama mensagem definida no html (cnpj não pode estar vazio) e a deixa invisivel*/
-            if (cnpj.length != 14) {/*verifica se o cnpj tem 14 digitos*/
-                valido = false
-                document.getElementById('cnpj-invalid-error').style.display = "block";/*chama mensagem do html (cnpj inválido) e a deixa visivel*/
-            }else {
-                document.getElementById('cnpj-invalid-error').style.display = "none";/*chama mensagem do html (cnpj inválido) e a deixa invisivel*/
-            }
-        }
 
-        // razao validacao
-        
-        if (razao === '') {/*se o campo estiver vazio será marcado como inválido*/
-            valido = false
-           document.getElementById('razao-required-error').style.display = "block";/*chama mensagem definida no html (razao social não pode estar vazio) e a deixa visivel*/
-        } else{
-             document.getElementById('razao-required-error').style.display = "none";/*chama mensagem definida no html (razao social não pode estar vazio) e a deixa invisivel*/
-        }
-
-        // nome fantasia validacao
+        // nome validacao
        
-        if (nome === '') {/*se o campo nome fantasia estiver vazio será marcado como inválido*/
+        if (nome === '') {/*se o campo nome estiver vazio será marcado como inválido*/
             valido = false
             document.getElementById('nome-required-error').style.display = "block";/*chama mensagem definida no html (nome fantasia não pode estar vazio) e a deixa visivel*/
         }else{
              document.getElementById('nome-required-error').style.display = "none";/*chama mensagem definida no html (nome fantasia não pode estar vazio) e a deixa invisivel*/
         }
         
-        // cep validacao
-     
-        if (cep === '') {/*se o campo cep estiver vazio será marcado como inválido*/
-            valido = false
-           document.getElementById('cep-required-error').style.display = "block";/*chama mensagem definida no html (cep não pode estar vazio) e a deixa visivel*/
-        } else {
-            document.getElementById('cep-required-error').style.display = "none";/*chama mensagem definida no html (cep não pode estar vazio) e a deixa invisivel*/
-            if (cep.length != 8) {/*verifica se o cep tem 8 difitos*/
-                valido = false
-                document.getElementById('cep-invalid-error').style.display = "block";/*chama mensagem definida no html (cep invalido) e a deixa visivel*/
-            }else{
-                document.getElementById('cep-invalid-error').style.display = "none";/*chama mensagem definida no html (cep invalido) e a deixa invisivel*/
-            }
-        }
-
-        // validacao numero
-      
-        if (numero === '') {/*se o campo número estiver vazio será marcado como inválido*/
-            valido = false
-            document.getElementById('numero-required-error').style.display = "block";/*chama mensagem definida no html (número não pode estar vazio) e a deixa visivel*/
-        } else{
-            document.getElementById('numero-required-error').style.display = "none";/*chama mensagem definida no html (número não pode estar vazio) e a deixa invisivel*/
-        }
 
         // validacao email
       
