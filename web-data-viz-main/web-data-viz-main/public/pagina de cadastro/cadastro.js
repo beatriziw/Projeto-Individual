@@ -2,9 +2,11 @@
         let nome = input_nome.value
         let email = input_email.value
 
-        let senha = input_criacaoSenha.value
+        let senha = input_senha.value
 
-        let confirmacao = input_confirmacaoSenha.value
+        let nascimento = input_data.value
+
+        let confirmacao = input_confirmacao.value
         let caracteres = ['!', '@', '$', '%', '&', '*', '?', '/']
         let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
@@ -35,6 +37,14 @@
             }else{
                document.getElementById('email-invalid-error').style.display = "none"; /*chama mensagem definida no html (e-mail inválido) e a deixa invisivel*/
             }
+        }
+
+        // validação nascimento
+         if (nascimento === '') {/*se o campo data de nascimento estiver vazio será marcado como inválido*/
+            valido = false
+           document.getElementById('nascimento-required-error').style.display = "block";/*chama mensagem definida no html (data de nascimento não pode estar vazio) e a deixa visivel*/
+        } else{
+             document.getElementById('nascimento-required-error').style.display = "none";/*chama mensagem definida no html (data de nascimento não pode estar vazio) e a deixa invisivel*/
         }
         // validações senha
        
@@ -101,14 +111,38 @@
         }
 
         if (valido) {/*a variavel valido inicia como true, case falhe em alguma das verificações se toorna false, se ao final permanecer como true a mensagem predefinida no html (cadastro realizado) ficará visivel*/
-            cardErro.style.display = "block"
-        setTimeout(() => {/*faz o card da mensagem desaparecer depois de 2 segundos*/
-            cardErro.style.display = "none";
-          }, "2000");
+        
+    fetch("/usuarios/cadastrar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+       
+        nomeServer: nome,
+        emailServer: email,
+        senhaServer: senha,
+        dtNascimentoServer: nascimento
+      }),
+      })
+      .then(function (resposta) {
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
 
           setTimeout(() => {
              window.location.href = './login.html'; //Direciona para a pagina login
           }, "2000");
+          limparFormulario();
+          finalizarAguardar();
+        } else {
+          throw "Houve um erro ao tentar realizar o cadastro!";
+        }
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+      });
  
         }
         }
