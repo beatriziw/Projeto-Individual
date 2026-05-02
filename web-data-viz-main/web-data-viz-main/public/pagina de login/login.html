@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylelogin.css">
 </head>
 <body>
+    <div class="header">
+    <ul class="navbar">  
+    <li>  
+    <a href="#">INÍCIO</a>
+    <a href="#">TIPOS DE ANIMAÇÃO</a>
+    <a href="#">CADASTRO</a>
+    <a href="#">DASHBOARD</a>
+    </li>
+    </ul>
+    </div>
+    <div class="conteudo">
+    <div class="box">
+    <div class="boxheader">
+    <h3>LOGIN<h3>
+    </div>
+
+   
+    <div class="campo">
+    <p>E-mail:</p>
+    <input type="email" id="input_email" placeholder="Ex.exemplo@seuemail.com">
+    <div class="error" id="email-required-error">Campo e-mail não pode estar vazio</div>
+    <div class="error" id="email-invalid-error">E-mail incorreto.</div>
+    </div>
+
+    <div class="campo">
+    <p>Senha:</p>
+    <input type="password" id="input_senha" placeholder="Mínimo 8 caracteres">
+    <div class="error" id="senha-required-error">Campo senha não pode estar vazio</div>
+    <div class="error" id="senha-invalid-error">Senha incorreta.</div>
+  
+    </div>
+
+    <button onclick="logar()">Logar</button>
     
+    </div>
+    </div>
+    <div class="footer">
+    <ul class="menu">  
+    <li>  
+    <h3>NAVEGAÇÃO<h3>
+    </li>
+    <a href="#">Início</a>
+    <a href="#">O que é Animação?</a>
+    <a href="#">Tipos de Animação</a>
+    <a href="#">Dashaboard</a>
+    </li>
+    </ul>  
+
+</div>
+ 
 </body>
 </html>
+<script src="login.js"></script>
