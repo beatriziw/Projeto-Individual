@@ -113,7 +113,7 @@
 
         if (valido) {/*a variavel valido inicia como true, case falhe em alguma das verificações se toorna false, se ao final permanecer como true a mensagem predefinida no html (cadastro realizado) ficará visivel*/
         
-    fetch("/usuarios/cadastrar", {
+    fetch("http://localhost:3000/usuarios/cadastrar", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -141,7 +141,7 @@
       })
       .catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
-        finalizarAguardar();
+        
       });
  
         }
