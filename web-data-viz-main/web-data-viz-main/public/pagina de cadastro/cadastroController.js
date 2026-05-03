@@ -99,6 +99,7 @@
 
         // confirmacao de senha validacao
         if (confirmacao === '') {/*se o campo confirmação de senha estiver vazio será marcado como inválido*/
+            valido = false
             document.getElementById('confirmacao-required-error').style.display = "block"; /*chama mensagem definida no html (campo confirmação de senha não pode estar vazio) e a deixa visivel*/ 
         } else {
             document.getElementById('confirmacao-required-error').style.display = "none";/*chama mensagem definida no html (campo confirmação de senha não pode estar vazio) e a deixa invisivel*/   
@@ -133,8 +134,7 @@
           setTimeout(() => {
              window.location.href = './login.html'; //Direciona para a pagina login
           }, "2000");
-          limparFormulario();
-          finalizarAguardar();
+          
         } else {
           throw "Houve um erro ao tentar realizar o cadastro!";
         }
