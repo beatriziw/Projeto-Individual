@@ -30,7 +30,7 @@ color: #758fd6;
 .banner{
 margin-top: 30px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 }
 .banner img{
 max-width: 15%;
