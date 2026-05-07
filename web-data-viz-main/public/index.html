@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AquaTech | Página Inicial</title>
-
+    <title>. ݁₊ ⊹ . ݁ Animação  ݁ . ⊹ ₊ ݁.</title>
     <script src="./js/sessao.js"></script>
-
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="icon" href="./assets/icon/favicon2.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styleinicial.css">
 </head>
-
 <body>
     <div class="header">
-      <div class="container">
-        <h1 class="titulo">AquaTech</h1>
-        <ul class="navbar">
-          <li class="agora">
-            <a href="#">Inicial</a>
-          </li>
-          <li>
-            <a href="simulador.html">Simulador</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="cadastro.html">Cadastro</a>
-          </li>
-        </ul>
-      </div>
+    <ul class="navbar">  
+    <li>  
+    <a href="#">INÍCIO</a>
+    <a href="#">TIPOS DE ANIMAÇÃO</a>
+    <a href="#">CADASTRO</a>
+    <a href="#">LOGIN</a>
+    <a href="#">DASHBOARD</a>
+    </li>
+    </ul>
     </div>
-  
-    <div class="banner">
-      <div class="container">
-        <p>Preservando <span>hoje</span> para existirem <span>amanhã</span>.</p>
-      </div>
-    </div>
-  
-    <div class="social">
-      <div class="container">
-        <div class="boxes">
-          <div class="box">
-            <img src="assets/imgs/planet-earth_color.png">
-            <h4>Missão</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
-          <div class="box">
-            <img src="assets/imgs/lightbulb_color.png">
-            <h4>Visão</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
-          <div class="box">
-            <img src="assets/imgs/growth_color.png">
-            <h4>Valores</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="footer">
-      <div class="container">
-        <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-        <span class="version">v1.0.0</span>
-      </div>
-    </div>
-  </body>
 
+    <div class="banner">
+    <image src="imagens/walk1.png"></image>
+    <image src="imagens/walk2.png"></image>
+    <image src="imagens/walk3.png"></image>
+    <image src="imagens/walk4.png"></image>
+    <image src="imagens/walk5.png"></image>        
+    </div>
+
+
+    <div class="conteudo">
+    <div class="postit">
+    <image src="imagens/postit.png"></image>
+    </div>
+    <div class="texto">
+    <p>Animação é uma técnica que simula movimento através de sequências de imagens. 
+    Quando vemos imagens seguidas uma da outra elas se mantêm por uma fração de segundo em nossas
+    retinas fazendo com que nosso cérebro as interprete como um único movimento. O padrão cinematográfico
+    para filmagem são 24 frames por segundo, ou seja, em um segundo aparecem 24 imagens consecutivas em tela,
+    esse conceito se estende para animação.  
+    </div>
+    <div class="imagens">
+    <image src="imagens/colagem.png">
+    </div>
+    
+    </div>
+ 
+ <div class="conteudo2">
+
+ <div class="calculadora">
+    <div class="calculadoraheader">
+    <h3>DESCUBRA QUANTOS DESENHOS TEM EM UMA ANIMAÇÃO<h3>
+    </div>
+   
+    <p>Quantos Segundos Tem a Sua Animação?</p>
+    <input type="text" id="input_segundos">
+    <p>Qual Técnica Será Utilizada?</p>
+    <select id="select_tecnica">
+        <option>Frame a Frame</option>
+        <option>By Twos</option>
+        <option>By Threes</option>   
+    </select>
+    <br>
+    <button onclick="calcular()">Calcular</button> 
+    <div id="div_mensagem"></div>
+ </div>
+ <div class="postit2">
+ <image src="imagens/postit2.png"></image>
+ </div>
+     <div class="texto2">
+    Um segundo animado equivale a 24 desenhos por segundo, o que é chamado de frame a frame, essa técnica é
+    mais usada para movimentos mais fluídos como danças ou para simular movimentações hiper-realistas.
+    No entanto existem outras técnicas como o by twos, 12 desenhos para 24 frames, dessa forma cada desenho
+    aparece duas vezes no período de 1 segundo. O by twos é a técnica mais comumente utilizada, pois em projetos 
+    estilizados a diferença entre uma animação frame a frame e uma by twos quase não é perceptível. Existem técnicas 
+    que repetem mais desenhos por segundo como by threes, by fours e assim por diante, porém a partir de by threes o 
+    movimento fica notoriamente mais travado, assim técnicas como essa são muito menos usadas se limitando a projetos específicos 
+    a critério da direção. 
+    </p>
+    </div> 
+     </div>
+    
+     
+ <div class="footer">
+   <ul class="menu">  
+    <li>  
+    <h3>NAVEGAÇÃO<h3>
+    </li>
+    <a href="#">Início</a>
+    <a href="#">O que é Animação?</a>
+    <a href="#">Tipos de Animação</a>
+    <a href="#">Dashaboard</a>
+    </li>
+    </ul>  
+
+</div>
+</body>
 </html>
+<script>
+    function calcular(){
+        let segundos = Number(input_segundos.value)
+        let tecnica = select_tecnica.value
+        let mensagem = ''
+
+        if(tecnica == 'Frame a Frame'){
+            mensagem = `Sua animação terá ${segundos*24} desenhos.`
+        } else if(tecnica == 'By Twos'){
+            mensagem = `Sua animação terá ${segundos*12} desenhos.`
+        }else{
+            mensagem = `Sua animação terá ${segundos*6} desenhos.`
+        }
+        div_mensagem.innerHTML = mensagem
+    }
+</script>
