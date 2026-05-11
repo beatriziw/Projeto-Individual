@@ -3,7 +3,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-image: url(imagenslogin/quadriculado.jpg);
+    background-image: url(../assets/imgs/quadriculado.jpg);
     background-size: 100% auto;  
 
 }

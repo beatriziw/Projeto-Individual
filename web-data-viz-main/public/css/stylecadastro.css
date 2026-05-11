@@ -3,7 +3,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-image: url(imagenscadastro/quadriculado.jpg);
+    background-image: url(../assets/imgs/quadriculado.jpg);
     background-size: 100% auto;  
 
 }
@@ -34,7 +34,7 @@ margin-right: 20px;
 li{
 list-style: none;
 color: #758fd6;
-    
+   
 }
 input{
 width:400px;

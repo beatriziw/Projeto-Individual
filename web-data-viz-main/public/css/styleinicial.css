@@ -3,7 +3,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-image: url(imagens/quadriculado.jpg);
+    background-image: url(../assets/imgs/quadriculado.jpg);
     background-size: 100% auto;
     
 
@@ -13,20 +13,32 @@ background-color: #CCCCFF;
 padding:60px;
 text-align: center;
 }
+.container{
+display: flex;
+justify-content:center;
+align-items:center;
+flex-direction:row;
+}
+.navbar{
+display: flex;  
+flex-direction: row; 
+}
 .navbar a{
-font-family: "Passion One", sans-serif;
+
 flex-direction: row;
 color: #758fd6;
 text-decoration: none;
 font-size: 28px;  
-justify-content: space-between;
+justify-content: center;
 margin-right: 20px;
 }
 li{
+font-family: "Passion One", sans-serif;
+font-size: 28px; 
 list-style: none;
 color: #758fd6;
-    
 }
+
 .banner{
 margin-top: 30px;
 display: flex;
