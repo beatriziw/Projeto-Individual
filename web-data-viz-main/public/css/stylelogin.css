@@ -92,9 +92,16 @@ color: #758fd6;
 font-family: "Passion One", sans-serif;
 }
 .menu{
-    margin-top: -50px;
+margin-top: -60px;
+}
+h3{
+margin-top:25px ;
+}
+.navegacao{
+margin-top: -20px;
 }
 .footer a{
+margin-top: 10px;
 font-family: monospace;
 display: flex;
 flex-direction: column;
