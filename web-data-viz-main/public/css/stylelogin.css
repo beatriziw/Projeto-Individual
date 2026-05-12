@@ -91,6 +91,9 @@ font-size: 15px;
 color: #758fd6;
 font-family: "Passion One", sans-serif;
 }
+.menu{
+    margin-top: -50px;
+}
 .footer a{
 font-family: monospace;
 display: flex;

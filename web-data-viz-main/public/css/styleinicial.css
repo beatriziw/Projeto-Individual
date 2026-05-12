@@ -92,7 +92,7 @@ right:16px;
 }
 .texto2{
 margin-top: -50px;
-right:140px;
+right:170px;
 padding: 40px;
 width:25%;
 font-size:16px;
@@ -104,8 +104,8 @@ text-align: justify;
 color: #758fd6;
 }
 .postit2{
-width:35%;
-margin-top: -200px;
+width:40%;
+margin-top: -120px;
 }
 .postit2 img{
 max-width:100%;
@@ -167,6 +167,9 @@ padding:70px;
 font-size: 15px;
 color: #758fd6;
 font-family: "Passion One", sans-serif;
+}
+.menu{
+    margin-top: -50px;
 }
 .footer a{
 font-family: monospace;

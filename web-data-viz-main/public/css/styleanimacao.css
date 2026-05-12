@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cutive&family=Fascinate&family=Fugaz+One&family=Mrs+Sheppards&family=Passion+One:wght@400;700;900&family=Rammetto+One&family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url(../assets/imgs/quadriculado.jpg);
+    background-size: 100% auto;
+    
+
+}
+.header{
+background-color: #CCCCFF;
+padding:60px;
+text-align: center;
+}
+.container{
+display: flex;
+justify-content:center;
+align-items:center;
+flex-direction:row;
+}
+.navbar{
+display: flex;  
+flex-direction: row; 
+}
+.navbar a{
+
+flex-direction: row;
+color: #758fd6;
+text-decoration: none;
+font-size: 28px;  
+justify-content: center;
+margin-right: 20px;
+}
+li{
+font-family: "Passion One", sans-serif;
+font-size: 28px; 
+list-style: none;
+color: #758fd6;
+}
+
+.banner{
+margin-top: 30px;
+display: flex;
+justify-content: space-evenly;
+}
+.banner img{
+max-width: 15%;
+}
+.conteudo{
+display: flex;
+justify-content: space-around;
+margin-top: 200px;   
+}
+
+.postit{
+width:50%;
+}
+.postit img{
+max-width:100%;
+}
+.texto{
+padding: 40px;
+width:35%;
+font-size:18px;
+font-family: "Cutive", serif;
+font-style: normal;
+display:flex;
+text-align: justify;
+color: #758fd6;
+position:absolute;
+left:100px;
+margin-top: 110px;
+line-height: 1.5;
+
+}
+.imagens{
+margin-top: 50px;
+position:relative;
+width:45%;
+right:16px;
+}
+
+.imagens img{
+ max-width: 100%;
+}
+.conteudo2{
+ margin-top: 200px;
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-around;
+   
+}
+.imagens2{
+position:relative;
+width:45%;
+left:16px;
+}
+.imagens2 img{
+ max-width: 100%;
+}
+.texto2{
+margin-top: 60px;
+right:100px;
+padding: 40px;
+width:35%;
+font-size:16px;
+line-height: 1.5;
+position:absolute;
+font-family: "Cutive", serif;
+display:flex;
+text-align: justify;
+color: #758fd6;
+}
+.postit2{
+width:50%;
+
+}
+.postit2 img{
+width:100%;
+}
+
+
+.conteudo3{
+ margin-top: 450px;
+ display: flex;
+ justify-content: space-around;
+   
+}
+.texto3{
+margin-top: -120px;
+left: 130px;
+padding: 40px;
+width:25%;
+font-size:16px;
+line-height: 2;
+position:absolute;
+font-family: "Cutive", serif;
+display:flex;
+text-align: justify;
+color: #758fd6;
+}
+.postit3{
+width:35%;
+margin-top: -200px;
+}
+.postit3 img{
+max-width:100%;
+}
+.imagens3{
+position:relative;
+width:45%;
+right:16px;
+margin-top: -150px;
+}
+
+.imagens3 img{
+width: 100%;
+}
+
+.conteudo4{
+ margin-top: 200px;
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-around;
+   
+}
+.imagens4{
+position:relative;
+width:45%;
+left:16px;
+}
+.imagens4 img{
+ max-width: 100%;
+}
+.texto4{
+margin-top: 90px;
+right:100px;
+padding: 40px;
+width:35%;
+font-size:18px;
+line-height: 1.5;
+position:absolute;
+font-family: "Cutive", serif;
+display:flex;
+text-align: justify;
+color: #758fd6;
+}
+.postit4{
+width:50%;
+
+}
+.postit4 img{
+width:100%;
+}
+
+.conteudo5{
+display: flex;
+justify-content: space-around;
+margin-top: 200px;   
+}
+
+.postit5{
+width:40%;
+}
+.postit5 img{
+max-width:100%;
+}
+.texto5{
+padding: 40px;
+width:25%;
+font-size:18px;
+font-family: "Cutive", serif;
+font-style: normal;
+display:flex;
+text-align: justify;
+color: #758fd6;
+position:absolute;
+left:150px;
+margin-top: 85px;
+line-height: 2;
+
+}
+.imagens5{
+position:relative;
+width:45%;
+right:16px;
+margin-top: 50px;
+}
+
+.imagens5 img{
+width: 100%;
+}
+
+.footer{
+margin-top: 100px;
+height:90px;
+background-color: #CCCCFF;
+padding:70px;
+font-size: 15px;
+color: #758fd6;
+font-family: "Passion One", sans-serif;
+}
+.menu{
+    margin-top: -50px;
+}
+.footer a{
+margin-top: 15px;
+font-family: monospace;
+display: flex;
+flex-direction: column;
+color: #758fd6;
+text-decoration: none;
+font-size: 15px;   
+}
