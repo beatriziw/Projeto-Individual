@@ -39,13 +39,13 @@ list-style: none;
 color: #758fd6;
 }
 
-.banner{
-margin-top: 30px;
+.titulo{
+margin-top: 100px;
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
 }
-.banner img{
-max-width: 15%;
+.titulo img{
+max-width: 75%;
 }
 .conteudo{
 display: flex;
