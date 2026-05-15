@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preferências</title>
+    <script src="./js/sessao.js"></script>
     <link rel="stylesheet" href="css/stylepreferencia.css">
 </head>
 <body>
@@ -300,17 +301,19 @@
 
     } 
   }
-   fetch("animacoes/cadastrar", {
+   fetch("animacoes/enviar", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
        
-        disneyServer: nome,
-        cartoonServer: email,
-        senhaServer: senha,
-        dtNascimentoServer: nascimento
+        disneyServer: disney,
+        cartoonServer: cartoon,
+        nickServer: nick,
+        favoritoServer: favorito,
+        emissoraServer: emissora,
+        tecnicaServer: tecnica,
       }),
       })
       .then(function (resposta) {
@@ -318,15 +321,15 @@
 
         if (resposta.ok) {
 
-          setTimeout(() => {
-             window.location.href = './login.html'; //Direciona para a pagina login
-          }, "2000");
+         // setTimeout(() => {
+        //  window.location.href = './login.html'; 
+        //}, "2000");
 
           limparFormulario();
           finalizarAguardar();
           
         } else {
-          throw "Houve um erro ao tentar realizar o cadastro!";
+          throw "Houve um erro aoenviar";
         }
       })
       .catch(function (resposta) {
