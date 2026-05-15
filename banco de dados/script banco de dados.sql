@@ -36,8 +36,10 @@ REFERENCES animacao(idanimacao)
 );
 
 CREATE TABLE preferencias 
-(idpreferencia INT PRIMARY KEY AUTO_INCREMENT,
-idusuario
+(idpreferencia INT,
+fkusuario INT,
+CONSTRAINT pkComposta
+	PRIMARY KEY (idpreferencia, fkusuario),
 fkdisneyfav INT,
 CONSTRAINT fkanimacaofavd FOREIGN KEY (fkdisneyfav)
 REFERENCES animacao(idanimacao),
