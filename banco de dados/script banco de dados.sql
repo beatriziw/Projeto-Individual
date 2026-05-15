@@ -13,7 +13,7 @@ titulo VARCHAR (100),
 descricao VARCHAR(200),
 classificacao VARCHAR (20),
 anoLancamento DATE,
-fkemissora INT NOT NULL,
+fkemissora INT,
 CONSTRAINT fkemissoradesenho FOREIGN KEY (fkemissora)
 REFERENCES emissora (idemissora)
 );
@@ -25,7 +25,12 @@ nome VARCHAR(100),
 email VARCHAR (100),
 dtNascimento DATE,
 senha VARCHAR (50),
-fkanimacao INT NOT NULL,
+dtCadastro DATETIME DEFAULT CURRENT_TIMESTAMP, 
+fkanimacao INT,
 CONSTRAINT fkanimacaofav FOREIGN KEY (fkanimacao)
 REFERENCES animacao(idanimacao)
 );
+
+SELECT*FROM usuario;
+
+
