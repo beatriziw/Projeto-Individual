@@ -307,7 +307,109 @@
 
     var animacaoDS = null
     if(disney==ishm){
-      animacaoDS == 1
+      animacaoDS == 19
+    }else if(disney==iskp){
+      animacaoDS == 20
+    }else if(disney==ispf){
+      animacaoDS == 21
+    }else if(disney==ishr){
+      animacaoDS == 22
+    }else if(disney==isgf){
+      animacaoDS == 23
+    }else{
+      animacaoDS == 24
+    }
+
+    var animacaoNS = null
+    if(nick==isbe){
+      animacaoNS == 25
+    }else if(nick==islh){
+      animacaoNS == 26
+    }else if(nick==istn){
+      animacaoNS == 27
+    }else if(nick==ispm){
+      animacaoNS == 28
+    }else if(nick==isha){
+      animacaoNS == 29
+    }else{
+      animacaoNS == 30
+    }
+
+    var animacaoCS = null
+    if(cartoon==isms){
+      animacaoCS == 31
+    }else if(cartoon==issu){
+      animacaoCS == 32
+    }else if(cartoon==isat){
+      animacaoCS == 33
+    }else if(cartoon==isccc){
+      animacaoCS == 34
+    }else if(cartoon==ispay){
+      animacaoCS == 35
+    }else{
+      animacaoCS == 36
+    }
+
+    var animacaoFS = null
+    if(favorito==ishm){
+      animacaoDS == 19
+    }else if(favorito==iskp){
+      animacaoFS == 20
+    }else if(favorito==ispf){
+      animacaoFS == 21
+    }else if(disney==ishr){
+      animacaoFS == 22
+    }else if(favorito==isgf){
+      animacaoFS == 23
+    }else if (favorito==iscc){
+      animacaoFS == 24
+    }else if(favorito==isbe){
+      animacaoFS == 25
+    }else if(favorito==islh){
+      animacaoFS == 26
+    }else if(favorito==istn){
+      animacaoFS == 27
+    }else if(favorito==ispm){
+      animacaoFS == 28
+    }else if(favorito==isha){
+      animacaoFS == 29
+    }else if(favorito==isiz){
+      animacaoFS == 30
+    }else if(favorito==isms){
+      animacaoFS == 31
+    }else if(favorito==issu){
+      animacaoFS == 32
+    }else if(favorito==isat){
+      animacaoFS == 33
+    }else if(favorito==isccc){
+      animacaoFS == 34
+    }else if(favorito==ispay){
+      animacaoFS == 36
+    }else{
+      animacaoFS == 36
+    }
+
+
+    var animacaoES = null
+    if(emissora==isdy){
+      animacaoES == 1
+    }else if(emissora==isnk){
+      animacaoES == 2
+    }else {
+      animacaoES == 3}
+
+
+      var animacaoTS = null
+    if(tecnica==istd){
+      animacaoTS == 1
+    }else if(tecnica==isct){
+      animacaoTS == 2
+    }else if(tecnica==is3d){
+      animacaoTS == 3
+    }else if(tecnica==issm){
+      animacaoTS == 4
+    }else{
+      animacaoTS == 5
     }
 
 
@@ -319,11 +421,11 @@
     body: JSON.stringify({
 
       disneyServer: animacaoDS,
-      cartoonServer: animaCS,
-      nickServer: nick,
-      favoritoServer: favorito,
-      emissoraServer: emissora,
-      tecnicaServer: tecnica,
+      nickServer: animacaoNS,
+      cartoonServer: animacaoCS,
+      favoritoServer: animacaoFS,
+      emissoraServer: animacaoES,
+      tecnicaServer: animacaoTS,
     }),
   })
     .then(function (resposta) {
@@ -350,4 +452,5 @@
   return
 
   }
+
 </script>
