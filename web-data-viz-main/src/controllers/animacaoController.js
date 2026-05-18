@@ -4,6 +4,7 @@ var aquarioModel = require("../models/animacaoModel");
 
 function enviar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var idUsuario = req.body.idServer;
     var disney = req.body.disneyServer;
     var nick = req.body.nickServer;
     var cartoon = req.body.cartoonServer;
@@ -13,7 +14,7 @@ function enviar(req, res) {
     
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        animacaoModel.enviar(disney, nick, cartoon, favorito, emissora, tecnica)
+        animacaoModel.enviar(idUsuario, disney, nick, cartoon, favorito, emissora, tecnica)
             .then(
                 function (resultado) {
                     res.json(resultado);
