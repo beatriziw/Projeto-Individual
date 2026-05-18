@@ -43,10 +43,10 @@ CONSTRAINT pkComposta
 fkdisneyfav INT,
 CONSTRAINT fkanimacaofavd FOREIGN KEY (fkdisneyfav)
 REFERENCES animacao(idanimacao),
-fkcartoonfav INT,
 fknickfav INT,
 CONSTRAINT fkanimacaofavn FOREIGN KEY (fknickfav)
 REFERENCES animacao(idanimacao),
+fkcartoonfav INT,
 CONSTRAINT fkanimacaofavc FOREIGN KEY (fkcartoonfav)
 REFERENCES animacao(idanimacao),
 fkfav INT,
@@ -59,6 +59,8 @@ fktecnica INT,
 CONSTRAINT fktecnicafav FOREIGN KEY (fktecnica)
 REFERENCES tecnica (idtecnica)
 );
+
+
 
 INSERT INTO emissora VALUES
 (DEFAULT, 'Disney Channel', '1983-04-18'),

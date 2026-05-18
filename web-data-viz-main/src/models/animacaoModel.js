@@ -8,7 +8,7 @@ function enviar (idUsuario, disney, nick, cartoon, favorito, emissora, tecnica) 
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucaoSql = `
-        INSERT INTO preferencias (idUsuario, disney, nick, cartoon, favorito, emissora, tecnica) VALUES ('${idUsuario}','${disney}', '${nick}','${cartoon}','${favorito}','${emissora}','${tecnica}');
+        INSERT INTO preferencias (fkusuario, fkdisneyfav, fknickfav, fkcartoonfav, fkfav, fkemissorafav, fktecnica) VALUES ('${idUsuario}','${disney}', '${nick}','${cartoon}','${favorito}','${emissora}','${tecnica}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
