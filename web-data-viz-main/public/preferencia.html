@@ -298,160 +298,169 @@
     let tecnica = document.querySelector('input[name="tecnica"]:checked');
 
     if (!disney || !nick || !cartoon || !favorito || !emissora || !tecnica) {
-       cardErro.style.display = "block"
-        setTimeout(() => {
-            cardErro.style.display = "none";
-          }, "2000");
-    return;
+      cardErro.style.display = "block"
+      setTimeout(() => {
+        cardErro.style.display = "none";
+      }, "2000");
+      return;
     }
 
     var animacaoDS = null
-    if(disney.value==ishm){
+    if (disney.value == "HM") {
       animacaoDS = 19
-    }else if(disney.value==iskp){
+    } else if (disney.value == "KP") {
       animacaoDS = 20
-    }else if(disney.value==ispf){
+    } else if (disney.value == "PF") {
       animacaoDS = 21
-    }else if(disney.value==ishr){
+    } else if (disney.value == "HR") {
       animacaoDS = 22
-    }else if(disney.value==isgf){
+    } else if (disney.value == "GF") {
       animacaoDS = 23
-    }else{
+    } else {
       animacaoDS = 24
     }
 
     var animacaoNS = null
-    if(nick.value==isbe){
+    if (nick.value == "BE") {
       animacaoNS = 25
-    }else if(nick.value==islh){
+    } else if (nick.value == "LH") {
       animacaoNS = 26
-    }else if(nick.value==istn){
+    } else if (nick.value == "TN") {
       animacaoNS = 27
-    }else if(nick.value==ispm){
+    } else if (nick.value == "PM") {
       animacaoNS = 28
-    }else if(nick.value==isha){
+    } else if (nick.value == "HA") {
       animacaoNS = 29
-    }else{
+    } else {
       animacaoNS = 30
     }
 
     var animacaoCS = null
-    if(cartoon.value==isms){
+    if (cartoon.value == "MS") {
       animacaoCS = 31
-    }else if(cartoon.value==issu){
+    } else if (cartoon.value == "SU") {
       animacaoCS = 32
-    }else if(cartoon.value==isat){
+    } else if (cartoon.value == "AT") {
       animacaoCS = 33
-    }else if(cartoon.value==isccc){
+    } else if (cartoon.value == "CCC") {
       animacaoCS = 34
-    }else if(cartoon.value==ispay){
+    } else if (cartoon.value == "PAY") {
       animacaoCS = 35
-    }else{
+    } else {
       animacaoCS = 36
     }
 
     var animacaoFS = null
-    if(favorito.value==ishm){
-      animacaoDS = 19
-    }else if(favorito.value==iskp){
+    if (favorito.value == "HM") {
+      animacaoFS = 19
+    } else if (favorito.value == "KP") {
       animacaoFS = 20
-    }else if(favorito.value==ispf){
+    } else if (favorito.value == "PF") {
       animacaoFS = 21
-    }else if(favorito.value==ishr){
+    } else if (favorito.value == "HR") {
       animacaoFS = 22
-    }else if(favorito.value==isgf){
+    } else if (favorito.value == "GF") {
       animacaoFS = 23
-    }else if (favorito.value==iscc){
+    } else if (favorito.value == "CC") {
       animacaoFS = 24
-    }else if(favorito.value==isbe){
+    } else if (favorito.value == "BE") {
       animacaoFS = 25
-    }else if(favorito.value==islh){
+    } else if (favorito.value == "LH") {
       animacaoFS = 26
-    }else if(favorito.value==istn){
+    } else if (favorito.value == "TN") {
       animacaoFS = 27
-    }else if(favorito.value==ispm){
+    } else if (favorito.value == "PM") {
       animacaoFS = 28
-    }else if(favorito.value==isha){
+    } else if (favorito.value == "HA") {
       animacaoFS = 29
-    }else if(favorito.value==isiz){
+    } else if (favorito.value == "IZ") {
       animacaoFS = 30
-    }else if(favorito.value==isms){
+    } else if (favorito.value == "MS") {
       animacaoFS = 31
-    }else if(favorito.value==issu){
+    } else if (favorito.value == "SU") {
       animacaoFS = 32
-    }else if(favorito.value==isat){
+    } else if (favorito.value == "AT") {
       animacaoFS = 33
-    }else if(favorito.value==isccc){
+    } else if (favorito.value == "CCC") {
       animacaoFS = 34
-    }else if(favorito.value==ispay){
+    } else if (favorito.value == "PAY") {
       animacaoFS = 35
-    }else{
+    } else {
       animacaoFS = 36
     }
 
 
     var animacaoES = null
-    if(emissora.value==isdy){
+    if (emissora.value == "DY") {
       animacaoES = 1
-    }else if(emissora.value==isnk){
+    } else if (emissora.value == "NK") {
       animacaoES = 2
-    }else {
-      animacaoES = 3}
+    } else {
+      animacaoES = 3
+    }
 
 
-      var animacaoTS = null
-    if(tecnica.value==istd){
+    var animacaoTS = null
+    if (tecnica.value == "TD") {
       animacaoTS = 1
-    }else if(tecnica.value==isct){
+    } else if (tecnica.value == "CT") {
       animacaoTS = 2
-    }else if(tecnica.value==is3d){
+    } else if (tecnica.value == "3D") {
       animacaoTS = 3
-    }else if(tecnica.value==issm){
+    } else if (tecnica.value == "SM") {
       animacaoTS = 4
-    }else{
+    } else {
       animacaoTS = 5
     }
 
-    var idUsuario =  sessionStorage.ID_USUARIO
+    var idUsuario = sessionStorage.ID_USUARIO
+    console.log(`entrando no fetch`)
 
-
-  fetch("/animacoes/enviar", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      idServer: idUsuario,
-      disneyServer: animacaoDS,
-      nickServer: animacaoNS,
-      cartoonServer: animacaoCS,
-      favoritoServer: animacaoFS,
-      emissoraServer: animacaoES,
-      tecnicaServer: animacaoTS,
-    }),
-  })
-    .then(function (resposta) {
+    fetch("/animacoes/enviar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        idServer: idUsuario,
+        disneyServer: animacaoDS,
+        nickServer: animacaoNS,
+        cartoonServer: animacaoCS,
+        favoritoServer: animacaoFS,
+        emissoraServer: animacaoES,
+        tecnicaServer: animacaoTS,
+      })
+    }).then(function (resposta) {
       console.log("resposta: ", resposta);
 
       if (resposta.ok) {
 
+        resposta.json().then(json => {
+          console.log(json);
+          console.log(JSON.stringify(json));
+
+          limparFormulario();
+          finalizarAguardar();
+
+        });
         // setTimeout(() => {
         //  window.location.href = './login.html'; 
         //}, "2000");
-
-        limparFormulario();
-        finalizarAguardar();
-
       } else {
-        throw "Houve um erro aoenviar";
+        // throw "Houve um erro ao enviar";
+        console.log("Houve um erro ao enviar a preferencia!");
+
+        resposta.text().then(texto => {
+          console.error(texto);
+
+        });
       }
-    })
-    .catch(function (resposta) {
+    }).catch(function (resposta) {
       console.log(`#ERRO: ${resposta}`);
 
     });
 
-  return
+    return
 
   }
 

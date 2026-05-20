@@ -1,5 +1,5 @@
-var usuarioModel = require("../models/animacaoModel");
-var aquarioModel = require("../models/animacaoModel");
+var animacaoModel = require("../models/animacaoModel");
+//var aquarioModel = require("../models/animacaoModel");
 
 
 function enviar(req, res) {
@@ -11,7 +11,7 @@ function enviar(req, res) {
     var favorito = req.body.favoritoServer;
     var emissora = req.body.emissoraServer;
     var tecnica = req.body.tecnicaServer;
-    
+    console.log(`Animacao controller`);
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
         animacaoModel.enviar(idUsuario, disney, nick, cartoon, favorito, emissora, tecnica)

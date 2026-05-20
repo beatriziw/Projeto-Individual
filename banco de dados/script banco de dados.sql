@@ -61,7 +61,6 @@ REFERENCES tecnica (idtecnica)
 );
 
 
-
 INSERT INTO emissora VALUES
 (DEFAULT, 'Disney Channel', '1983-04-18'),
 (DEFAULT, 'Nickelodeon', '1977-12-01'),
@@ -88,4 +87,16 @@ INSERT INTO animacao VALUES
 (DEFAULT, 'Hi Hi Puffy AmiYumi', 'Ami e Yumi são cantoras de rock que vivem aventuras incríveis.', 'Livre', '2004-11-19',3),
 (DEFAULT, 'Ben 10', 'Aos 10 anos Ben descobre um relógio que permite que ele se transforme em alienígena.', '10 anos', '2007-10-30',3);
 
+INSERT INTO tecnica VALUES
+(DEFAULT,'Tradigital'),
+(DEFAULT,'Cutout'),
+(DEFAULT,'3D'),
+(DEFAULT,'Stop Motion'),
+(DEFAULT,'Motion Graphics');
+
+SELECT*FROM animacao;
+SELECT*FROM emissora;
+SELECT * FROM tecnica;
+
+ALTER TABLE preferencias MODIFY COLUMN idpreferencia INT NOT NULL AUTO_INCREMENT;
 
